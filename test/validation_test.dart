@@ -163,4 +163,18 @@ void main() {
       'abaabababababaababfaba',
     ]);
   });
+
+  test('validate digital field', () {
+    final validate = ValidationBuilder().numeric().build();
+
+    checkValidation(validate, validValues: [
+      '00000000000000',
+      '1',
+      '123456789'
+    ], invalidValues: [
+      'x',
+      ' ',
+      '1234567x',
+    ]);
+  });
 }

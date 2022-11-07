@@ -31,4 +31,7 @@ class LocaleEn implements FormValidatorLocale {
 
   @override
   String url(String v) => 'The field is not a valid URL address';
+
+  @override
+  String numeric(String v) => 'The field must contain digits only';
 }

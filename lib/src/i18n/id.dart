@@ -30,4 +30,7 @@ class LocaleId implements FormValidatorLocale {
 
   @override
   String url(String v) => 'Masukan bukan alamat URL yang benar';
+
+  @override
+  String numeric(String v) => throw UnimplementedError();
 }

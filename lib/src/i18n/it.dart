@@ -31,4 +31,7 @@ class LocaleIt implements FormValidatorLocale {
 
   @override
   String url(String v) => 'Il campo non è un indirizzo URL valido';
+
+  @override
+  String numeric(String v) => throw UnimplementedError();
 }

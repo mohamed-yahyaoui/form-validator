@@ -31,4 +31,7 @@ class LocaleRo implements FormValidatorLocale {
 
   @override
   String url(String v) => 'Câmpul nu este o adresă URL validă';
+
+  @override
+  String numeric(String v) => throw UnimplementedError();
 }

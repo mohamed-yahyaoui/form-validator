@@ -31,4 +31,7 @@ class LocaleFr implements FormValidatorLocale {
 
   @override
   String url(String v) => "Le champ n'est pas une URL valide";
+
+  @override
+  String numeric(String v) => "Le champ doit contenir seulement des chiffres";
 }

@@ -110,6 +110,10 @@ Checks if value is correct IPv6 address.
 
 Checks if value is correct url address.
 
+### `.numeric([String message])`
+
+Check if field contains only digits.
+
 ### `.regExp(RegExp regExp, String message)`
 
 Validates if value does matches `regExp` or not.

@@ -17,6 +17,7 @@ void validateLocale(ValidationBuilder builder, FormValidatorLocale locale) {
   expect(builder.reset().url().test('abc'), equals(locale.url('abc')));
   expect(builder.reset().ip().test('abc'), equals(locale.ip('abc')));
   expect(builder.reset().ipv6().test('abc'), equals(locale.ipv6('abc')));
+  expect(builder.reset().numeric().test('abc'), equals(locale.numeric('abc')));
 }
 
 void main() {
